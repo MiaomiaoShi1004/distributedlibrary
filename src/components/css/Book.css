@@ -1,0 +1,49 @@
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the book items horizontally */
+  gap: 60px; /* Adjust the gap as needed */
+  
+  /* These will make sure the .book-list fills the whole width of the screen */
+  width: 100%; /* Set the width to 100% of the parent element */
+  margin: 0 auto; /* Center the .book-list within the parent element */
+  
+  /* This will create a background that is half transparent and half #E1E2F6 */
+  background-image: linear-gradient(to bottom, transparent 50%, #E1E2F6 50%);
+  
+  /* The following padding will add space inside the container at the top and bottom */
+  padding-top: 30px; 
+  padding-bottom: 30px; 
+}
+
+/* If the .book-list is directly inside the body or a full-width container, it will extend to the edges of the viewport */
+
+
+
+
+.book {
+  width: 240px; /* Set width of the book container */
+  margin: 10px; /* Add some space around the books */
+  overflow: hidden; /* Ensures the content doesn't spill outside */
+}
+
+.book-img {
+  width: 100%; /* Full width of the container */
+  height: 340px; /* Fixed height for the images */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+.book-title {
+  font-size: 1em; 
+  white-space: nowrap; /* Prevent the title from wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis (...) for overflow text */
+}
+
+.book-author {
+  font-size: 0.8em; 
+}
+
+.book-copies {
+  font-size: 0.8em; 
+}
