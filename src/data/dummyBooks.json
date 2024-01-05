@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Yellowface",
+    "author": "R.F. Kuang",
+    "description": "With its totally immersive first-person voice, Yellowface grapples with questions of diversity, racism, and cultural appropriation, as well as the terrifying alienation of social media. R.F. Kuang’s novel is timely, razor-sharp, and eminently readable.",
+    "copies": 10,
+    "copiesAvailable": 10,
+    "category": "FE",
+    "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1671336608i/62047984.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Hello Beautiful",
+    "author": "Ann Napolitano",
+    "description": "Vibrating with tenderness, Hello Beautiful is a gorgeous, profoundly moving portrait of what’s possible when we choose to love someone not in spite of who they are, but because of it. ",
+    "copies": 15,
+    "copiesAvailable": 15,
+    "category": "FE",
+    "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1687803098i/61771675.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Someone Else's Shoes",
+    "author": "Jojo Moyes",
+    "description": "Proin at urna faucibus, pretium mi in, dapibus metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam elementum ligula ut vestibulum tincidunt. ",
+    "copies": 10,
+    "copiesAvailable": 10,
+    "category": "FE",
+    "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1666822989i/62971668.jpg"
+  },
+  {
+    "id": 4,
+    "title": "The Collected Regrets of Clover",
+    "author": "Mikki Brammer",
+    "description": "Probing, clever, and hopeful, The Collected Regrets of Clover is perfect for readers of The Midnight Library and Eleanor Oliphant is Completely Fine as it turns the normally taboo subject of death into a reason to celebrate life.",
+    "copies": 12,
+    "copiesAvailable": 12,
+    "category": "Data",
+    "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1663608724i/61214136.jpg"
+  }
+]
