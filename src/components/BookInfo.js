@@ -46,6 +46,7 @@ function BookInfo({ book }) {
         </div>
         <div className="book-info-details-container">
           <h2 className="book-info-title">Discription</h2>
+          <p>Bookid: {book.id}</p>
           <p className="book-info-description">{book.description}</p>
         </div>
       </div>
