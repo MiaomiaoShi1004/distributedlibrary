@@ -13,6 +13,7 @@ function BookList() {
     // setBooks(dummyBooks);
     axios.get('http://localhost:8181/api/user')
     .then(response => {
+      console.log(response.data)
       setBooks(response.data);
       if (response.data.length > 0) {
         setSelectedBook(response.data[0]);

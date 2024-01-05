@@ -3,7 +3,34 @@ import axios from 'axios';
 import './css/ReviewSection.css';
 import starIcon from '../images/star_icon.svg';
 
-function ReviewSection({ review }) {
+function ReviewSection({ review, bookId }) {
+    
+  // Function to handle star icon click
+  const handleBorrowClick = async () => {
+    const userEmail = prompt('Enter your email to borrow the book:');
+
+    if (!userEmail) {
+      alert('Email is required to borrow a book.');
+      return;
+    }
+
+    const borrowData = {
+      userEmail,
+      bookId: bookId, 
+    };
+
+    try {
+      const response = await axios.post('http://localhost:8181/api/user/checkout', borrowData);
+      // console.log(borrowData)
+      if (response.status === 202) {
+        alert('Book borrowed successfully!');
+      }
+    } catch (error) {
+      console.error('Error borrowing book:', error);
+      alert('Failed to borrow book.');
+    }
+  };
+
   // Function to handle star icon click
   const handleStarClick = async () => {
     // Prompt the user for input
@@ -21,7 +48,7 @@ function ReviewSection({ review }) {
     const reviewData = {
       userEmail,
       rating: parseFloat(rating), // Convert rating to a float
-      bookId: review.bookId, // Assuming `review` prop has a `bookId` property
+      bookId: bookId, // Assuming `review` prop has a `bookId` property
       reviewDescription
     };
 
@@ -46,8 +73,8 @@ function ReviewSection({ review }) {
         </div>
       </div>
       <div className="borrow-section">
-        <button className="borrow-button">borrow</button>
-        {/* Star icon as a button */}
+      <button className="borrow-button" onClick={handleBorrowClick}>borrow</button>
+
         <button className="star-button" onClick={handleStarClick}>
           <img src={starIcon} alt="Star" className="star-icon" />
         </button>

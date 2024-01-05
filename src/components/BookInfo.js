@@ -16,7 +16,6 @@ function BookInfo({ book }) {
           const response = await axios.get(`http://localhost:8181/api/user/getreview?bookId=${book.id}`);
           if (response.data && response.data.length > 0) {
             setReview(response.data[response.data.length - 1]);
-            console.log(response.data[0])
           } else {
             console.log("No view for this book yet")
             setReview(dummyGetReview[0]);
@@ -39,7 +38,7 @@ function BookInfo({ book }) {
   return (
     <div className="book-info-container">
       <div className="book-info-left-pane">
-        <ReviewSection review={review} />
+        <ReviewSection review={review} bookId={book.id}/>
       </div>
       <div className="book-info-right-pane">
         <div className="book-info-image-container">
