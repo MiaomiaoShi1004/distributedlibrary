@@ -1,0 +1,55 @@
+.review-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space between content and borrow section */
+  height: 100%; /* Take full height of parent */
+  /* background-color: #cccccc; */
+  padding: 20px;
+  padding-left: 140px;
+
+}
+
+.review-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  flex: 1; /* Take available space */
+  text-align: left; /* Align text to the left */
+}
+
+.review-description,
+.user-email,
+.rating {
+  margin-bottom: 10px; /* Space between items */
+}
+
+.rating {
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.borrow-section {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Ensure there's space from the above content */
+  text-align: left; /* Align text to the left */
+  margin-bottom: 150px; /* Ensure there's space from the above content */
+
+}
+
+.borrow-button {
+  width: 90px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.star-icon {
+  width: 24px; /* Size of the star icon */
+  height: auto;
+  margin-left: 5px; /* Space between star icon and text */
+  margin-right: 5px; /* Space between star icon and text */
+}
