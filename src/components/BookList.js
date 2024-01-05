@@ -11,12 +11,13 @@ function BookList() {
 
   useEffect(() => {
     // setBooks(dummyBooks);
-    // axios
-    
     axios.get('http://localhost:8181/api/user')
     .then(response => {
-      console.log("API Data:", response.data);
+      console.log(response.data)
       setBooks(response.data);
+      if (response.data.length > 0) {
+        setSelectedBook(response.data[0]);
+      }
       console.log("yes");
     })
     .catch(error => {
@@ -25,9 +26,17 @@ function BookList() {
   }, []);
 
   const handleBookSelect = (id) => {
-    const book = books.find(book => book.id === id);
-    setSelectedBook(book);
+    if (selectedBook && selectedBook.id === id) {
+      setSelectedBook(null);
+    }
+    // Then set the selected book to the clicked book
+    // Using a timeout to ensure the state is set to null before setting the new book
+    setTimeout(() => {
+      const book = books.find(book => book.id === id);
+      setSelectedBook(book);
+    }, 0);
   };
+  
 
   return (
     <div>
