@@ -17,9 +17,16 @@
 
 .landing-return-button {
   position: absolute;
-  right: 50px; /* Align it 50px from the right edge */
+  right: 170px; /* Align it 50px from the right edge */
   top: 50%; /* Center it vertically */
   transform: translateY(-50%); /* Adjust vertical centering */
+  width: 90px; /* Set the width */
+  background-color: black; /* Set the background color */
+  color: white; /* Set the text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .landing-content {
@@ -64,6 +71,12 @@
     position: static; /* Return button goes into the normal flow */
     transform: translateY(0);
     margin-top: 20px;
+    width: 90px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
   }
 
   .landing-content {

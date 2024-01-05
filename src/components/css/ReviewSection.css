@@ -45,8 +45,15 @@
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.star-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: inline-flex; /* To align the star icon properly */
+}
 .star-icon {
   width: 24px; /* Size of the star icon */
   height: auto;
