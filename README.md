@@ -1,13 +1,10 @@
-# How to run this application. 
+# Running the Application
 
-## First make sure run docker-compose up for the back-end part. Will append the link later.
+## Backend Setup:
+Execute `docker-compose up` to start the [backend services](https://github.com/ZhaoYuxin1211/DistributedLibrary). 
 
-## Available Scripts
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
+## Frontend Setup:
+From the project directory, start the application with `npm start`.
+The app will run in development mode. 
+Access it via [http://localhost:3000](http://localhost:3000) in your browser.
